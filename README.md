@@ -2,7 +2,8 @@
 Various useful scripts written in Perl
 
 ### Common functions used in perl scripts:
-Writing to a file:
+
+*Writing to a file:
 
 '''
 open my $headfile, '>>', "gapInfo.txt";
@@ -11,9 +12,9 @@ close $headfile;
 '''
 
 
-Find duplicates:
+*Find duplicates:
 
-'''
+'''perl
 foreach my $string (@baseID) {
 	$index++;
 	my $firstIndex = 0;
@@ -39,7 +40,7 @@ foreach my $string (@baseID) {
 '''
 	
 regex:
-'if ($row =~ /((\w+\.? ){10})/){	'
+'if ($row =~ /((\w+\.? ){10})/){'
 	
 	
 ##See files

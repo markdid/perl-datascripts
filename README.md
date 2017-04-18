@@ -3,18 +3,18 @@ Various useful scripts written in Perl
 
 ### Common functions used in perl scripts:
 
-*Writing to a file:
+* Writing to a file:
 
-'''
+ ''' perl
 open my $headfile, '>>', "gapInfo.txt";
 print $headfile "Line #| (ID) gapStart| (ID) gapEnd\n";
 close $headfile;
-'''
+ '''
 
 
-*Find duplicates:
+* Find duplicates:
 
-'''perl
+ ''' perl
 foreach my $string (@baseID) {
 	$index++;
 	my $firstIndex = 0;
@@ -37,12 +37,12 @@ foreach my $string (@baseID) {
 		}
 	}
 	print "$string ($secondMatch) on line: $secondLine, is duplicated with another index ($firstIndex) == ($firstLine)\n";
-'''
+ '''
 	
-regex:
-'if ($row =~ /((\w+\.? ){10})/){'
+* regex:
+ ' if ($row =~ /((\w+\.? ){10})/){'
 	
 	
-##See files
+## See files
 		
 

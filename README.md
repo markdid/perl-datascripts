@@ -40,8 +40,10 @@ foreach my $string (@baseID) {
 ```
 	
 * regex:
- ' if ($row =~ /((\w+\.? ){10})/){'
-	
+```perl
+if ($row =~ /(\d+)[A-B]/){`
+	my $num = $1;
+```
 	
 ## See files
 		
